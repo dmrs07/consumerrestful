@@ -11,7 +11,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public final class Cliente {
 
-	private Integer id;
+	private String id;
 	private String nome;
 	private String cpf;
 	private String endereco;
@@ -64,10 +64,11 @@ public final class Cliente {
 		return "Cliente [id=" + id + ", nome=" + nome + ", cpf=" + cpf + ", endereco=" + endereco + "]";
 	}
 	
-	public Integer getId() {
+
+	public String getId() {
 		return id;
 	}
-	public void setId(Integer id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	public String getNome() {

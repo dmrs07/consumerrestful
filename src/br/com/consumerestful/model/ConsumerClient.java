@@ -22,10 +22,13 @@ public class ConsumerClient {
 		
 		
 			Gson gson = new Gson();
-			final Cliente cliente = gson.fromJson(stringJson, Cliente.class);
+			
+			JSON json = gson.fromJson(stringJson, JSON.class);
 			
 			
-			System.out.println(cliente.getNome());		
+			System.out.println(json);
+			
+			System.out.println(json.getCliente().getNome());		
 
 	}
 
